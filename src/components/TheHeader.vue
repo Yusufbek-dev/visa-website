@@ -13,9 +13,6 @@
             <li class="nav-list__item">
                 <a href="#">Bizning Hizmatlar</a>
             </li>
-            <li class="nav-list__item">
-                <a href="#">Savol yo'llash</a>
-            </li>
         </ul>
     </header>
 </template>
@@ -29,7 +26,7 @@ export default {
 
 <style scoped>
 header {
-    background-color: antiquewhite;
+    background-color:rgb(33, 33, 33);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,6 +45,7 @@ header {
 a {
     color: rgb(42, 40, 40);
     text-decoration:none;
+    color:rgb(255, 251, 251)
 
 }
 </style>

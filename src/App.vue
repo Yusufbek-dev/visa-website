@@ -25,6 +25,9 @@ export default {
 ul {
   list-style: none;
 }
+body {
+  margin: 0;
+}
 html {
   box-sizing: border-box;
 }
