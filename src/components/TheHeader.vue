@@ -7,15 +7,15 @@
         </div>
         <ul class="nav-list">
             <li class="nav-list__item">
-                <a href="#">Bosh Sahifa</a>
+                <a class="link active-link" href="#">Asosiy</a>
             </li>
             <li class="nav-list__item">
-                <a href="#">Biz bilan bog'lanish</a>
+                <a class="link" href="#">Xizmatlarimiz</a>
             </li>
             <li class="nav-list__item">
-                <a href="#">Bizning Hizmatlar</a>
+                <a class="link" href="#">Bog'lanish</a>
             </li>
-            <li class="nav-list__item">
+            <li class="nav-list__item" >
                 <a href="tel:+998912931771">📞 +998912931771</a>
             </li>
         </ul>
@@ -32,7 +32,7 @@ export default {
 <style scoped>
 header {
     padding: 0 5%;
-    background:rgb(33, 33, 33, 0.6);
+    background:rgb(33, 33, 33, 0.9);
     box-shadow: 0 0 10px wheat;
     display: flex;
     justify-content: space-between;
@@ -51,29 +51,41 @@ header {
     transition: 0.2s;
     padding: 0 8px;
 }
-.nav-list__item:hover {
-    background-color: rgb(134, 35, 227);
-    border-radius: 15px;
-}
 .nav-list__item:last-child {
     background-color: rgb(134, 35, 227);
     padding: 0 8px;
     border-radius: 15px;
 }
 a {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:"Poppins", sans-serif;
+    position: relative;
     color: rgb(42, 40, 40);
     text-decoration:none;
-    color:rgb(255, 251, 251);
-    position: relative;
-
+    color: #a0a0a0;
+    padding: 0 10px;
+    transition: 0.3s;
 }
-a:hover::before {
-    display: inline-block;
-    content: '';
+.link::after {
+    transition: 0.3s;
+    left: 0;
+    bottom: -10px;
+    content: "";
     position: absolute;
-    widows: 20px;
-    height: 2px;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(134, 35, 227);
+}
+.active-link::after {
+    width: 100%;
+}
+.active-link {
+    color: #fff;
+}
+a:hover {
+    color: #fff;
+}
+a:hover::after {
+    width: 100%;
 }
 .logo img{
 

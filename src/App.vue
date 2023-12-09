@@ -1,17 +1,15 @@
 <template>
-  <TheHeader />
+  <the-header></the-header>
   <TheHome />
   <the-footer></the-footer>
 </template>
 
 <script>
-import TheHeader from './components/TheHeader.vue'
 import TheHome from './components/TheHome.vue'
 
 export default {
   name: 'App',
   components: {
-    TheHeader,
     TheHome
   }
 }
@@ -19,8 +17,14 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
-* {
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+* {
   text-decoration: none;
   list-style: none;
 }

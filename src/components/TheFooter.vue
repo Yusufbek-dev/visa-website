@@ -2,8 +2,13 @@
     <footer>
         <div class="footer-text">
             <h5>Biz haqimizda</h5>
-            <p>Biz ko'plab mijozlarimizga online visa olish va istalgan davlatiga bilet sotib olishda yordam berib kelmoqdamiz</p>
+            <p>Biz ko'plab mijozlarimizga online visa olish va istalgan davlatiga parvozga chipta sotib olishda yordam berib kelmoqdamiz.</p>
         </div>
+        <!-- <div class="footer-logo">
+            <a href="#home">
+                <img src="../../images/visaLogo2.png" alt="">
+            </a>
+        </div> -->
         <div class="footer-contact">
             <p class="contact-title">Biz bilan bog'lanish</p>
             <a href="tel:+998912931771"><img src="../../images/phone.svg" alt="phone number"> +998912931771</a>
@@ -17,38 +22,47 @@ footer {
     height: 15vh;;
     background-color: #000;
     box-shadow: 0 20px 0 #000;
-    padding: 20px 5%;
+    padding: 15px 5%;
     display: flex;
     justify-content: space-between;
 }
 h5 {
     font-size: 23px;
-    color: #fff;
-    letter-spacing: 4px;
+    color: #a0a0a0;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
 }
 .footer-text p{
-    max-width: 300px;
-    margin-top: 25px;
-    font-size: 12px;
-    letter-spacing: 4px;
-    color: #fff;
+    max-width: 400px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #a0a0a0;
 }
 .contact-title {
     margin-bottom: 20px;
-    font-weight: 600px;
+    font-weight: 700px;
     color: #fff;
-    letter-spacing: 4px;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 .footer-contact a {
-    color: #fff;
+    color: #a0a0a0;
     display: flex;
     align-items: center;
 }
+.footer-contact a:hover {
+    color: #fff;
+}
 .footer-contact a img {
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
 }
 .footer-contact a:last-child{
     margin-top: 12px;
 }
+/* .footer-logo a img{
+    width: 120px;
+    height: 120px;
+} */
 </style>

@@ -1,13 +1,13 @@
 <template>
     <section class="main">
-        <h1>Assalomu alaykum bizning online hizmat markazimizga hushkelibsiz!</h1>
+        <h1>Assalomu alaykum bizning online xizmat markazimizga xush kelibsiz!</h1>
         <p>
             Biz sizga sifatli xizmatlarimizni taklif etamiz. 
             Biz bilan ishingiz tez va oson hal bo'ladi.
         </p>
         <div class="btns">
             <a  class="tel" href="tel:+998912931771">Biz bilan aloqa</a>
-            <a class="teg" href="https://t.me/Yusufbek_dev">Habar yo'lash</a>
+            <a class="teg" href="https://t.me/Yusufbek_dev">Habar yo'llash</a>
         </div>
     </section>
 </template>
@@ -42,6 +42,7 @@ h1 {
     margin-bottom: 20px;
 }
 .btns {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
