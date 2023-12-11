@@ -2,7 +2,7 @@
     <footer>
         <div class="footer-text">
             <h5>Biz haqimizda</h5>
-            <p>Biz ko'plab mijozlarimizga online visa olish va istalgan davlatiga parvozga chipta sotib olishda yordam berib kelmoqdamiz.</p>
+            <p>Biz ko'plab mijozlarimizga online visa olish va istalgan davlatiga avia chipta sotib olishda yordam berib kelmoqdamiz.</p>
         </div>
         <!-- <div class="footer-logo">
             <a href="#home">

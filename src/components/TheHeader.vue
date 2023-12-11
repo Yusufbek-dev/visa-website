@@ -7,16 +7,16 @@
         </div>
         <ul class="nav-list">
             <li class="nav-list__item">
-                <a class="link active-link" href="#">Asosiy</a>
+                <router-link to="home" class="link" href="#">Asosiy</router-link>
             </li>
             <li class="nav-list__item">
-                <a class="link" href="#">Xizmatlarimiz</a>
+                <router-link to="service" class="link">Xizmatlarimiz</router-link>
             </li>
             <li class="nav-list__item">
-                <a class="link" href="#">Bog'lanish</a>
+                <router-link to="contact" class="link" href="#">Bog'lanish</router-link>
             </li>
             <li class="nav-list__item" >
-                <a href="tel:+998912931771">📞 +998912931771</a>
+                <router-link to="tel:+998912931771">📞 +998912931771</router-link>
             </li>
         </ul>
     </header>
@@ -75,7 +75,7 @@ a {
     height: 3px;
     background-color: rgb(134, 35, 227);
 }
-.active-link::after {
+.router-link-active::after {
     width: 100%;
 }
 .active-link {

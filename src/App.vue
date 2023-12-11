@@ -1,17 +1,12 @@
 <template>
   <the-header></the-header>
-  <TheHome />
+  <router-view></router-view>
   <the-footer></the-footer>
 </template>
 
 <script>
-import TheHome from './components/TheHome.vue'
-
 export default {
   name: 'App',
-  components: {
-    TheHome
-  }
 }
 </script>
 
