@@ -78,7 +78,7 @@ a {
 .router-link-active::after {
     width: 100%;
 }
-.active-link {
+.router-link-active {
     color: #fff;
 }
 a:hover {

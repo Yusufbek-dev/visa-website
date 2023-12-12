@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
+import App from './App.vue'
 import {createRouter, createWebHistory} from 'vue-router';
 
-import App from './App.vue'
 import TheFooter from './components/TheFooter.vue';
 import TheHeader from './components/TheHeader.vue'
 
@@ -12,14 +12,15 @@ const router = createRouter({
     history:createWebHistory(),
     routes:[
         {path:'/home', component:TheHome},
-        {path:'/serviece', component:TheCervice},
+        {path:'/service', component:TheCervice},
     ]
 });
 
 
 const app = createApp(App);
+
+app.component('the-header', TheHeader);
+app.component('the-footer', TheFooter);
 app.use(router);
 
-app.component('the-footer', TheFooter);
-app.component('the-header', TheHeader);
 app.mount('#app')
