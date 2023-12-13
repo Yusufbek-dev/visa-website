@@ -1,9 +1,9 @@
 <template>
     <header>
         <div class="logo">
-            <a href="#">
+            <router-link to="home">
                 <img src="../../images/visaLogo2.png" alt="logo">
-            </a>
+            </router-link>
         </div>
         <ul class="nav-list">
             <li class="nav-list__item">

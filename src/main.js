@@ -7,12 +7,14 @@ import TheHeader from './components/TheHeader.vue'
 
 import TheHome from './components/pages/TheHome.vue'
 import TheCervice from './components/pages/TheCervice.vue'
+import TheContact from './components/pages/TheContact.vue'
 
 const router = createRouter({
     history:createWebHistory(),
     routes:[
         {path:'/home', component:TheHome},
         {path:'/service', component:TheCervice},
+        {path:'/contact', component:TheContact},
     ]
 });
 
