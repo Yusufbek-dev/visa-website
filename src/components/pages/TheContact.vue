@@ -12,7 +12,7 @@
                 <input type="submit" value="Jo'natish">
             </form>
             <div class="contact-us">
-                <p class="contact-title">Biz bilan online bog'lanish.</p>
+                <p class="contact-title">Biz bilan bog'lanish.</p>
                 <ul class="contact-list">
                     <li>
                         <img src="../../../images/phone.svg" alt=""> <a href="tel:+998912931771">+998912931771</a>

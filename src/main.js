@@ -12,6 +12,7 @@ import TheContact from './components/pages/TheContact.vue'
 const router = createRouter({
     history:createWebHistory(),
     routes:[
+        {path:'/', redirect:'/home'},
         {path:'/home', component:TheHome},
         {path:'/service', component:TheCervice},
         {path:'/contact', component:TheContact},
