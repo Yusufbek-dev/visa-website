@@ -16,7 +16,7 @@
                     <router-link to="contact" class="link" href="#">Bog'lanish</router-link>
                 </li>
                 <li class="nav-list__item" >
-                    <router-link to="tel:+998912931771">📞 +998912931771</router-link>
+                    <router-link to="tel:+998912931771">+998912931771</router-link>
                 </li>
             </ul>
             <div class="bar" ref="bar" @click="barClick">
@@ -161,6 +161,15 @@
         .nav-list__item:last-child {
             width: 80vw;
             margin: 0 auto;
+        }
+    }
+    @media (max-width:680px) {
+        .nav-list {
+            height: 87vh;
+            justify-self: start;
+        }
+        .nav-list__item {
+            font-size: 1.8rem;
         }
     }
     </style>

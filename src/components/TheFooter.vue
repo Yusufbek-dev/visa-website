@@ -61,6 +61,25 @@ h5 {
 .footer-contact a:last-child{
     margin-top: 12px;
 }
+
+@media (max-width:680px) {
+    footer {
+        height:auto;
+        flex-direction: column;
+        column-gap: 90px;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-text {
+        padding-top: 30px;
+        margin-bottom: 40px;
+    }
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}
 /* .footer-logo a img{
     width: 120px;
     height: 120px;

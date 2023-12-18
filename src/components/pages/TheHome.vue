@@ -1,6 +1,6 @@
 <template>
     <section class="main">
-        <h1>Assalomu alaykum bizning online xizmat markazimizga xush kelibsiz!</h1>
+        <h1>Assalomu alaykum! Bizning online xizmat markazimizga xush kelibsiz!</h1>
         <p>
             Biz sizga sifatli xizmatlarimizni taklif etamiz. 
             Biz bilan ishingiz tez va oson hal bo'ladi.
@@ -64,5 +64,48 @@ h1 {
 }
 .teg {
     margin-left: 40px;
+}
+
+@media (max-width: 900px) {
+    .main {
+        padding-top: 50px;
+        justify-content: start;
+    }
+    h1,p {
+        width: 90vw;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 2rem;
+    }
+    .btns {
+        margin-top: 150px;
+        justify-content: space-between;
+    }
+    .tel,.teg {
+        padding: 25px 35px;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 680px) {
+    .main {
+        padding-top: 30px;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+    .btns {
+        margin-top: 100px;
+    }
+    .tel, .teg {
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
 }
 </style>

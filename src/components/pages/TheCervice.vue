@@ -107,4 +107,10 @@ li a {
         margin-left: 100px;
     }
 }
+
+@media (max-width:900px) {
+    .service {
+        height: auto;
+    }
+}
 </style>
