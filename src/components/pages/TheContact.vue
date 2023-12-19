@@ -61,6 +61,7 @@ form {
     margin: 0 auto;
 }
 input {
+    font-size: 1.2rem;
     border:none;
     background-color: #fff;
     min-width: 33%;
@@ -134,5 +135,70 @@ li>a {
 }
 li>a:hover {
     color: #fff;
+}
+
+@media (max-width:900px) {
+    form {
+        width: 90%;
+    }
+    .contact {
+        height:auto;
+    }
+    .contact>div {
+        height: auto;
+    }
+    .contact-us {
+        width: 95vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .contact-title {
+        padding-bottom: 0;
+        width: 40vw;
+        text-align:start;
+    }
+    .contact-title::after {
+        display: none;
+    }
+    .contact-list {
+        width: auto;
+        margin:0;
+        flex-direction: column;
+        align-items: start;
+    }
+    .contact-list li{
+        margin-bottom: 10px;
+    }
+
+    @media (max-width:680px) {
+        h3 {
+            font-size: 2rem;
+        }
+        form {
+            width: 95%;
+        }
+        input {
+            width: 90%;
+        }
+        .contact-us {
+            flex-direction: column;
+        }
+        .contact-list {
+            width: 90%;
+        }
+        .contact-title {
+            text-align: center;
+            font-size: 2rem;
+            width: 95%;
+        }
+        .contact-list li{
+            padding: 5px 15px;
+            margin-bottom: 30px;
+        }
+        .contact-list li a {
+            font-size: 1.6rem;
+        }
+    }
 }
 </style>

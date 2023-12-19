@@ -63,10 +63,10 @@ li {
     color: #fff;
 }
 li:nth-child(odd) {
-    animation:left 1s forwards;
+    animation:left 1s;
 }
 li:nth-child(even)  {
-    animation: right 1s forwards;
+    animation: right 1s;
 }
 li a {
     color: inherit;
@@ -90,27 +90,58 @@ li a {
 @keyframes left {
     0% {
         opacity: 0;
-        padding-left: 150px;
+        padding-left: 100px;
     }
     100% {
         opacity: 1;
-        padding-left: 100px;
+        padding-left: 0px;
     }
 }
 @keyframes right {
     0% {
         opacity: 0;
-        margin-left: 50px;
+        margin-left: -100px;
     }
     100% {
         opacity: 1;
-        margin-left: 100px;
+        margin-left: 0;
     }
 }
 
 @media (max-width:900px) {
     .service {
         height: auto;
+    }
+    .service-title {
+        padding: 20px 0;
+    }
+    .service-list {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    li {
+        padding: 15px 0;
+    }
+}
+@media (max-width:680px) {
+    .service {
+        height: auto;
+    }
+    .service-list {
+        width: 90%;
+        padding-bottom: 60px;
+    }
+    .service-title {
+        padding: 15px 0;
+        font-size: 2.2rem;
+    }
+    li {
+        font-size: 1.5rem;
+        padding: 7px 0;
+    }
+    .contact-btn {
+        font-size: 1rem;
+        padding: 8px 15px;
     }
 }
 </style>

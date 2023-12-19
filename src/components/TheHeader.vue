@@ -126,12 +126,12 @@
         height: 120px;
     }
 
-    @media (max-width:1024px) {
+    /* @media (max-width:1024px) {
         header {
             flex-direction: column;
             justify-content: center;
         }
-    }
+    } */
     @media (max-width:900px) {
         .bar {
             display: block;
