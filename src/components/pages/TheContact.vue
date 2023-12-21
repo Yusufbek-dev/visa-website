@@ -37,11 +37,11 @@ export default {
 
 <style scoped>
 .contact {
-    height: 72vh;
+    height: auto;
     background: url(../../../images/contact.jpg) center center;
 }
 .contact>div {
-    height: 72vh;
+    height: inherit;
     background-color: rgb(33, 33, 33, 0.8);
 }
 h3 {
@@ -135,6 +135,9 @@ li>a {
 }
 li>a:hover {
     color: #fff;
+}
+.contact-us {
+    padding-bottom: 40px;
 }
 
 @media (max-width:900px) {

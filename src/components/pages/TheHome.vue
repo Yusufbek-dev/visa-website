@@ -21,7 +21,7 @@ export default {
 <style scoped>
 .main {
     background: rgb(33, 33, 33, 0.6);
-    height: 72vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,7 +82,8 @@ h1 {
         font-size: 2rem;
     }
     .btns {
-        margin-top: 150px;
+        margin-top: 100px;
+        padding-bottom: 80px;
         justify-content: space-between;
     }
     .tel,.teg {
@@ -98,10 +99,10 @@ h1 {
         font-size: 1.7rem;
     }
     p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .btns {
-        margin-top: 100px;
+        margin-top: 60px;
     }
     .tel, .teg {
         padding: 15px 20px;

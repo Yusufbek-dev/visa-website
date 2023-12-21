@@ -4,7 +4,7 @@
         <h2 class="service-title">Biznig xizmatlar</h2>
         <ol class="service-list">
             <li>
-                <a href="https://t.me/Yusufbek_dev">-- Abu Dabi va Duabi uchun visa olish.</a>
+                <a href="https://t.me/Yusufbek_dev">-- Abu Dabi va Dubai uchun visa olish.</a>
             </li>
             <li>
                 <a href="https://t.me/Yusufbek_dev">-- Saudia davlati uchun visa olish.</a>
@@ -13,7 +13,7 @@
                 <a href="https://t.me/Yusufbek_dev">-- Istalgan davlatga Avia chipta olish.</a>
             </li>
             <li>
-                <a href="https://t.me/Yusufbek_dev">--  Safarda yuzaga kelgan muamoli holatlarda yordam berish.</a>
+                <a href="https://t.me/Yusufbek_dev">--  Safarda yuzaga kelgan muammoli holatlarda online yordam berish.</a>
             </li>
         </ol>
         <router-link to="contact" class="contact-btn">Biz bilan bog'laning ➡</router-link>
@@ -29,12 +29,13 @@ export default {
 
 <style scoped>
 .service {
-    height: 72vh;
+    height: auto;
     background: url(../../../images/masque.jpg) center center;
 }
-.service div {
-    height: 72vh;
+.service>div {
+    height: inherit;
     background-color: rgb(33, 33, 33, 0.6);
+    padding-bottom: 50px;
 }
 .service-title {
     padding: 40px 0;
@@ -58,7 +59,7 @@ export default {
 }
 li {
     text-align: start;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 20px 0;
     color: #fff;
 }
@@ -129,14 +130,14 @@ li a {
     }
     .service-list {
         width: 90%;
-        padding-bottom: 60px;
+        padding-bottom: 40px;
     }
     .service-title {
         padding: 15px 0;
         font-size: 2.2rem;
     }
     li {
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 7px 0;
     }
     .contact-btn {

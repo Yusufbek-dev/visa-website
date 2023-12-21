@@ -16,7 +16,7 @@
                     <router-link to="contact" class="link" href="#">Bog'lanish</router-link>
                 </li>
                 <li class="nav-list__item" >
-                    <router-link to="tel:+998912931771">+998912931771</router-link>
+                    <a href="tel:+998912931771">+998912931771</a>
                 </li>
             </ul>
             <div class="bar" ref="bar" @click="barClick">
@@ -71,7 +71,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 13vh;
+        height: 15vh;
         /* box-shadow: 0px 0px 10px 0px gray; */
     }
     .nav-list {
@@ -80,9 +80,9 @@
     }
     .nav-list__item {
         margin-left: 35px;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         transition: 0.2s;
-        padding: 0 8px;
+        padding: 0 7px;
     }
     .nav-list__item:last-child {
         background-color: rgb(134, 35, 227);
@@ -143,7 +143,7 @@
             background-color: #000000ef;
             left: -100%;
             width: 100%;
-            height:72vh;
+            height:auto;
             flex-direction: column;
             justify-content: space-evenly;
             transition: .3s ease all

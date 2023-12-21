@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import { createApp} from 'vue'
 import App from './App.vue'
 import {createRouter, createWebHistory} from 'vue-router';
 
@@ -8,6 +8,10 @@ import TheHeader from './components/TheHeader.vue'
 import TheHome from './components/pages/TheHome.vue'
 import TheCervice from './components/pages/TheCervice.vue'
 import TheContact from './components/pages/TheContact.vue'
+
+
+// const TheCervice = defineAsyncComponent(()=> import('./components/pages/TheCervice.vue'));
+// const TheContact = defineAsyncComponent(()=> import('./components/pages/TheContact.vue'));
 
 const router = createRouter({
     history:createWebHistory(),

@@ -19,12 +19,13 @@
 
 <style scoped>
 footer {
-    height: 15vh;;
+    height: auto;
     background-color: #000;
     box-shadow: 0 20px 0 #000;
     padding: 15px 5%;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 h5 {
     font-size: 23px;
