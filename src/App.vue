@@ -26,6 +26,9 @@ export default {
 body {
   background-image:url(../images/jygqq.gif);
   background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 #app {
   font-family: Jost, Helvetica, Arial, sans-serif;

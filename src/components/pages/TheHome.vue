@@ -21,11 +21,12 @@ export default {
 <style scoped>
 .main {
     background: rgb(33, 33, 33, 0.6);
-    height: auto;
+    min-height: 72vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px 0;
 }
 h1,p{
     font-weight: 600;

@@ -19,7 +19,7 @@
 
 <style scoped>
 footer {
-    height: auto;
+    min-height: 15vh;
     background-color: #000;
     box-shadow: 0 20px 0 #000;
     padding: 15px 5%;

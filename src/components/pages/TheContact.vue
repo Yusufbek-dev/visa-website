@@ -2,13 +2,13 @@
     <section class="contact">
         <div>
             <h3>Visa olish uchun formni to'ldiring.</h3>
-            <form action="">
-                <input type="text" placeholder="ismingiz:" required>
-                <input type="text" placeholder="familyangiz:" required>
-                <input type="text" placeholder="Otangizni ismi:" required>
-                <input type="text" placeholder="Onangizni ismi:" required>
-                <input type="email" placeholder="Email adresingiz:" required>
-                <input type="number" placeholder="Telefon raqam:" required>
+            <form action="" @submit.prevent="submitForm" ref="form">
+                <input type="text" placeholder="ismingiz:" v-model="name" required>
+                <input type="text" placeholder="familyangiz:" v-model="surname" required>
+                <input type="text" placeholder="Otangizni ismi:" v-model="fatherNmae" required>
+                <input type="text" placeholder="Onangizni ismi:" v-model="motherName" required>
+                <input type="email" placeholder="Email adresingiz:" v-model="email" required>
+                <input type="number" placeholder="Telefon raqam:" v-model="phone" required>
                 <input type="submit" value="Jo'natish">
             </form>
             <div class="contact-us">
@@ -32,16 +32,47 @@
 <script>
 export default {
 
+    data() {
+        return {
+            name:'',
+            surname:'',
+            fatherNmae:'',
+            motherName:'',
+            email:'',
+            phone:Number,
+        }
+    },
+    methods: {
+        submitForm() {
+            const userDate = {
+                name:this.name,
+                lastName:this.surname,
+                fatherName:this.fatherNmae,
+                motherName:this.motherName,
+                email:this.email,
+                phone:this.phone,
+            }
+            fetch('https://data-visa-default-rtdb.asia-southeast1.firebasedatabase.app/users.json', {
+                method:'POST',
+                haeder:{
+                    'Content-Type':'aplication/json'
+                },
+                body:JSON.stringify({user:userDate})
+            })
+            this.$refs.form.reset();
+
+        }
+    }
 }
 </script>
 
 <style scoped>
 .contact {
-    height: auto;
+    min-height: 72vh;
     background: url(../../../images/contact.jpg) center center;
 }
 .contact>div {
-    height: inherit;
+    min-height: 72vh;
     background-color: rgb(33, 33, 33, 0.8);
 }
 h3 {

@@ -42,36 +42,18 @@
     </script>
 
     <style scoped>
-    .bar {
-        display: none;
-        cursor: pointer;
-    }
-    .bar>div {
-        transition: 0.3s;
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: #fff;
-        margin-bottom: 5px;
-        border-radius: 5px;
-    }
-    .bar.active div:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .bar.active div:nth-child(2){
-        opacity: 0;
-    }
-    .bar.active div:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
+
     header {
+        position: sticky;
+        top: 0px;
+        width: 100vw;
         padding: 0 5%;
         background:rgb(33, 33, 33, 0.9);
         box-shadow: 0 0 10px wheat;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 15vh;
+        height: 13vh;
         /* box-shadow: 0px 0px 10px 0px gray; */
     }
     .nav-list {
@@ -126,6 +108,28 @@
         height: 120px;
     }
 
+    .bar {
+        display: none;
+        cursor: pointer;
+    }
+    .bar>div {
+        transition: 0.3s;
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+    .bar.active div:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .bar.active div:nth-child(2){
+        opacity: 0;
+    }
+    .bar.active div:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
     /* @media (max-width:1024px) {
         header {
             flex-direction: column;
@@ -143,7 +147,7 @@
             background-color: #000000ef;
             left: -100%;
             width: 100%;
-            height:auto;
+            height:87vh;
             flex-direction: column;
             justify-content: space-evenly;
             transition: .3s ease all

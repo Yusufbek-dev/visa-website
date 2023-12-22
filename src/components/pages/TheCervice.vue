@@ -29,11 +29,11 @@ export default {
 
 <style scoped>
 .service {
-    height: auto;
+    min-height: 72vh;
     background: url(../../../images/masque.jpg) center center;
 }
 .service>div {
-    height: inherit;
+    min-height: 72vh;
     background-color: rgb(33, 33, 33, 0.6);
     padding-bottom: 50px;
 }
