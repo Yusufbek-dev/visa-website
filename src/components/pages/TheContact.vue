@@ -31,7 +31,6 @@
 
 <script>
 export default {
-
     data() {
         return {
             name:'',
@@ -44,23 +43,22 @@ export default {
     },
     methods: {
         submitForm() {
-            const userDate = {
-                name:this.name,
-                lastName:this.surname,
-                fatherName:this.fatherNmae,
-                motherName:this.motherName,
-                email:this.email,
-                phone:this.phone,
-            }
             fetch('https://data-visa-default-rtdb.asia-southeast1.firebasedatabase.app/users.json', {
                 method:'POST',
                 haeder:{
                     'Content-Type':'aplication/json'
                 },
-                body:JSON.stringify({user:userDate})
+                body:JSON.stringify({
+                    name:this.name,
+                    lastName:this.surname,
+                    fatherName:this.fatherNmae,
+                    motherName:this.motherName,
+                    email:this.email,
+                    phone:this.phone,
+                })
             })
+            alert("Habaringiz jo'natildi tez orada sizbilan bog'lanamiz.")
             this.$refs.form.reset();
-
         }
     }
 }
